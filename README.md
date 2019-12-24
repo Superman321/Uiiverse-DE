@@ -1,6 +1,6 @@
 [![# Uiiverse](https://i.ibb.co/dMPvqk9/logo.png)](https://uiiverse.xyz/)
 
-**A Pearl-based Miiverse clone with many themes.**
+**The German translation for the Pearl-based Miiverse clone with many themes.**
 
 [Official website](https://uiiverse.xyz/)
 
