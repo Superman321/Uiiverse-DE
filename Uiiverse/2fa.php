@@ -43,11 +43,11 @@ if(empty($_SESSION['signed_in'])){
                 $tfaresult = $tfa->verifyCode($user['2fa_secret'], $_POST['code']);
 
                 if ($tfaresult == FALSE) {
-                    $errors[] = "The auth code didn't match. Please try again.";
+                    $errors[] = "Der Code war nicht richtig. Versuche es erneut.";
                 }
 
                 if (empty($errors)) {
-                    echo '<div id="main-body">Redirecting to Uiiverse...';
+                    echo '<div id="main-body">Umleitung zu Uiiverse...';
                     $_SESSION['signed_in'] = true;
                     $update_ip = $dbc->prepare('UPDATE users SET ip = ? WHERE user_id = ?');
                     $update_ip->bind_param('si', $_SERVER['HTTP_CF_CONNECTING_IP'], $_SESSION['user_id']);
